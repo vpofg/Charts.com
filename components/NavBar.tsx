@@ -11,14 +11,12 @@ export default function NavBar() {
                     <h1 className="text-2xl font-bold text-[#21D761]">Charts</h1>
                 </Link>
                 <div className="hidden md:flex space-x-4 relative ml-auto">
-                    <Link href="/">Dashboard</Link>
+                    <Link href="/dashboard">Dashboard</Link>
                     <Link href="/about">About</Link>
                     <Link href="/contact">Contact</Link>
                 </div>
                 <div className="ml-4">
-                    <button className="bg-primary/50 px-4 py-2 rounded-md bg-[#21D761] text-black hover:bg-green-500">
-                        Sign In
-                    </button>
+                        <Link href="/signin" className="bg-primary/50 px-4 py-2 rounded-md bg-[#21D761] text-black hover:bg-green-500">Sign In</Link>
                 </div>
             </div>   
         </nav>
