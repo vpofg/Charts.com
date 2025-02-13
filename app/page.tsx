@@ -6,11 +6,13 @@ import { LinePlot, MarkPlot } from "@mui/x-charts/LineChart";
 import { Divider } from "@heroui/divider";
 import {Link} from "@heroui/link";
 import { Image } from "@heroui/image";
+import TabsCard from "@/components/TabsCard";
 
 export default function App() {
   return (
     <div className="pt-20 mt-9">
-      <div className="w-full gap-2 grid grid-cols-3 px-8 relative">
+      <div className="w-full gap-2 grid grid-cols-3 px-8 relative flex-grow">
+        {/* first card with graph visual */}
         <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-black/60 uppercase font-bold">Streamlined</p>
@@ -40,33 +42,36 @@ export default function App() {
           </CardFooter>
         </Card>
 
+        {/* Second card with text */}
         <Card isFooterBlurred className="w-full h-[600px] col-span-1 flex">
-        <CardHeader className="flex gap-3">
-        <Image
-          alt="Charts logo"
-          height={40}
-          radius="sm"
-          src="/logo-no-background.svg"
-          width={40}
-        />
-        <div className="flex flex-col">
-          <p className="text-md">🎵 Discover, Vote, and Shape the Charts!</p>
-          <p className="text-small text-default-500">charts.com</p>
-        </div>
-      </CardHeader>
-      <Divider />
-      <CardBody>
-        <h1 className="text-2xl bold">Tired of generic charts that don’t reflect your taste? </h1>
-        <p>
-          Our app lets you decide what’s trending. Vote on your favorite tracks, albums, and artists, and watch as rankings evolve in real time. Whether you’re competing in matchups, tracking trends with friends, or exploring the hottest releases, your voice shapes the music scene.</p>
-      </CardBody>
-      <Divider />
-      <CardFooter>
-        <Link isExternal showAnchorIcon href="https://github.com/vpofg/chooser-app" className="text-[#21D761]">
-          Visit source code on GitHub.
-        </Link>
-      </CardFooter>
+          <CardHeader className="flex gap-3">
+            <Image
+              alt="Charts logo"
+              height={40}
+              radius="sm"
+              src="/logo-no-background.svg"
+              width={40}
+            />
+            <div className="flex flex-col">
+              <p className="text-md">🎵 Discover, Vote, and Shape the Charts!</p>
+              <p className="text-small text-default-500">charts.com</p>
+            </div>
+          </CardHeader>
+            <Divider />
+          <CardBody>
+            <h1 className="text-2xl bold">Tired of generic charts that don’t reflect your taste? </h1>
+            <p> Our app lets you decide what’s trending. Vote on your favorite tracks, albums, and artists, and watch as rankings evolve in real time. Whether you’re competing in matchups, tracking trends with friends, or exploring the hottest releases, your voice shapes the music scene.</p>
+          </CardBody>
+            <Divider />
+          <CardFooter>
+            <Link isExternal showAnchorIcon href="https://github.com/vpofg/chooser-app" className="text-[#21D761]">
+              Visit source code on GitHub.
+            </Link>
+          </CardFooter>
         </Card>
+
+        {/* Third card */}
+        <TabsCard />
       </div>
     </div>
   );
