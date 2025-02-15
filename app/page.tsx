@@ -11,7 +11,7 @@ import TabsCard from "@/components/TabsCard";
 export default function App() {
   return (
     <div className="pt-20 mt-9">
-      <div className="w-full gap-2 grid grid-cols-3 px-8 relative flex-grow">
+      <div className="w-full gap-6 grid grid-cols-3 px-8 relative flex-grow">
         {/* first card with graph visual */}
         <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
@@ -36,9 +36,11 @@ export default function App() {
               <p className="text-black text-tiny">Your Music Listening Habits</p>
               <p className="text-black text-tiny">Now visualized</p>
             </div>
-            <Button className="text-tiny bg-[#21D761]" radius="full" size="md">
-              Get Started
-            </Button>
+            <Link href="/signup">
+              <Button className="text-tiny bg-[#21D761]" radius="full" size="md">
+                Get Started
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
 
@@ -53,14 +55,14 @@ export default function App() {
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md">🎵 Discover, Vote, and Shape the Charts!</p>
-              <p className="text-small text-default-500">charts.com</p>
+              <p className="text-md text-black">🎵 Discover, Vote, and Shape the Charts!</p>
+              <p className="text-small text-default-500 text-black">charts.com</p>
             </div>
           </CardHeader>
             <Divider />
           <CardBody>
-            <h1 className="text-2xl bold">Tired of generic charts that don’t reflect your taste? </h1>
-            <p> Our app lets you decide what’s trending. Vote on your favorite tracks, albums, and artists, and watch as rankings evolve in real time. Whether you’re competing in matchups, tracking trends with friends, or exploring the hottest releases, your voice shapes the music scene.</p>
+            <h1 className="text-2xl bold text-black">Tired of generic charts that don’t reflect your taste? </h1>
+            <p className="text-black"> Our app lets you decide what’s trending. Vote on your favorite tracks, albums, and artists, and watch as rankings evolve in real time. Whether you’re competing in matchups, tracking trends with friends, or exploring the hottest releases, your voice shapes the music scene.</p>
           </CardBody>
             <Divider />
           <CardFooter>
