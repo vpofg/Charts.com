@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col h-full">
             <div className="flex-grow">
                 {/* Your main content here */}
             </div>

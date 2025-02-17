@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function NavBar() {
     return (
         <nav className="fixed w-full z-50 bg-background/50 bg-opacity-80 backdrop-blur-lg bg-black text-white h-20 flex items-center"> 
-            <div className="max-w-[1800px] w-full px-4 mx-auto flex items-center">
+            <div className=" w-full px-4 mx-auto flex items-center">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image src="/LogoTypeDarkMode.svg" alt="logo" width={128} height={128} />
                 </Link>
