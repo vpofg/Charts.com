@@ -7,6 +7,7 @@ import { Divider } from "@heroui/divider";
 import {Link} from "@heroui/link";
 import { Image } from "@heroui/image";
 import TabsCard from "@/components/TabsCard";
+import { BarPlot } from "@mui/x-charts";
 
 export default function App() {
   return (
@@ -18,17 +19,20 @@ export default function App() {
             <p className="text-tiny text-black/60 uppercase font-bold">Streamlined</p>
             <h4 className="text-black font-medium text-2xl">Data Visualisation</h4>
           </CardHeader>
-          <div className="flex-grow w-full h-full">
+          <div className="w-full h-full">
             <ResponsiveChartContainer
               series={[
-                { type: "line", data: [2.8, 6, 3.5, 8.5, 3, 5], color: "#21D761" },
+                { type: "bar", data: [5, 4, 7, 4, 6.6, 3], color: "#21D761"},
+                { type: "line", data: [2.8, 6, 3.5, 8.5, 3, 5], color: "#0d5626"},
               ]}
               xAxis={[
-                { data: [1, 2, 3, 5, 8, 10], scaleType: "linear", id: "x-axis-id"},
+                { data: [1, 2, 3, 5, 8, 10], scaleType: "band", id: "x-axis-id" },
               ]}
+              
             >
-              <LinePlot />
-              <MarkPlot />
+              <BarPlot/>
+              <LinePlot/>
+              <MarkPlot/>
             </ResponsiveChartContainer>
           </div>
           <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">

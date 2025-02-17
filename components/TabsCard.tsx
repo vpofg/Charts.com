@@ -20,6 +20,7 @@ export default function App() {
               fullWidth
               aria-label="Tabs form"
               size="md"
+              variant="underlined"
             >
               <Tab key="global" title="Global Charts">
                 <Card>
