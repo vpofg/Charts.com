@@ -12,7 +12,7 @@ import { BarPlot } from "@mui/x-charts";
 export default function App() {
   return (
     <div className="pt-20 mt-9 pb-8">
-      <div className="w-full gap-6 grid grid-cols-3 px-8 relative flex-grow">
+      <div className="w-[70%] gap-6 grid grid-cols-3 px-8 relative flex-grow items-center mx-auto">
         {/* first card with graph visual */}
         <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">

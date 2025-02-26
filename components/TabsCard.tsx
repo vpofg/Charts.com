@@ -19,7 +19,7 @@ export default function App() {
             <p className="text-tiny text-black/60 uppercase font-bold">placeholder</p>
           </CardHeader>
         </div>
-        <div className="flex-grow w-full h-full overflow-hidden">
+        <div className="flex-grow w-full h-[50%] overflow-hidden">
           <CardBody className="overflow-hidden">
             <Tabs
               fullWidth
@@ -28,7 +28,7 @@ export default function App() {
               variant="underlined"
             >
               <Tab key="global" title="Global Charts">
-                <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
+                <Card isFooterBlurred className="w-full h-[400px] col-span-2 flex flex-col">
                 <CardHeader className="absolute z-10 top-1 flex-col items-start">
                 <h4 className="text-black font-medium text-2xl">Global Charts</h4>
                   <p className="text-tiny text-black/60 font-bold">See what people around the world are listening to!</p>
@@ -49,7 +49,7 @@ export default function App() {
                 </Card>
               </Tab>
               <Tab key="personal" title="Perosnal Stats">
-              <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
+              <Card isFooterBlurred className="w-full h-[400px] col-span-2 flex flex-col">
                 <CardHeader className="absolute z-10 top-1 flex-col items-start">
                 <h4 className="text-black font-medium text-2xl">Personal Stats</h4>
                   <p className="text-tiny text-black/60 font-bold">Explore your own taste and listening habits!</p>
@@ -57,7 +57,7 @@ export default function App() {
                 </Card>
               </Tab>
               <Tab key="vote" title="Vote and share!">
-                <Card isFooterBlurred className="w-full h-[600px] col-span-2 flex flex-col">
+                <Card isFooterBlurred className="w-full h-[400px] col-span-2 flex flex-col">
                   <CardHeader className="absolute z-10 top-1 flex-col items-start">
                   <h4 className="text-black font-medium text-2xl">Vote and share!</h4>
                   <p className="text-tiny text-black/60 font-bold">Show your favourite artists some love in weekly rankings</p>
